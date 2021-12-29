@@ -1419,7 +1419,7 @@ void update() {
   if (((clip || draw) + (move || resize)) > 1) {
     /* more than one action to perform, unmap to hide move/draws
      * to reduce flickering */
-    XUnmapWindow(dpy, zone);
+    // XUnmapWindow(dpy, zone);
   }
 
   if (clip || draw) {
